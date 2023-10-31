@@ -56,4 +56,3 @@ thankful.addEventListener('click', () => moods.push("Thankful"));
 moody.addEventListener('click', () => moods.push("Nervous"));
 
 btn.addEventListener('click', () => createEntry(moods));
-document.querySelector("#savedQuotes").addEventListener('click', () => savedQuotes());
