@@ -12,9 +12,8 @@ function saveTravel(rest, city, desc) {
 }
 
 let entries = localStorage.getItem('travelLog');
-var data = [];
+var data = JSON.parse(entries);
 if (entries != '') {
-    data = JSON.parse(entries);
     for (let entry of data) {
         document.getElementById("card-container").innerHTML +=
         `<div class="card" style="width: 40rem; margin-top: 1rem;">
