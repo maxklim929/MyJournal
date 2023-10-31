@@ -9,3 +9,15 @@
     margin-right: auto;
     display: block;
   }
+
+#travel-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#travel-forms {
+    width: 50rem; 
+}
