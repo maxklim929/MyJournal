@@ -17,6 +17,9 @@
     flex-direction: column;
 }
 
-#travel-forms {
-    width: 100vh; 
+#newentry {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-content: center;
 }

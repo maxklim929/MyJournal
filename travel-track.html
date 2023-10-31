@@ -44,26 +44,28 @@
         </div>
     </nav>
     <div id="travel-container">
-        <div id="travel-forms">
-            <form>
-                <div class="form-group">
-                    <label for="Restuarant Name">Restuarant Name</label>
-                    <input class="form-control" id="restaurant-name"
-                        placeholder="Burgers 'n Stuff">
+        <div class="card" style="width: 90%; background-color: rgb(202, 157, 111);" id="newentry">
+            <div class="card-body">
+                <div id="travel-forms">
+                    <form>
+                        <div class="form-group">
+                            <label for="Restuarant Name">Restuarant Name</label>
+                            <input class="form-control" id="restaurant-name" placeholder="Burgers 'n Stuff">
+                        </div>
+                        <div class="form-group">
+                            <label for="City">City</label>
+                            <input class="form-control" id="city" placeholder="New York">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="text" rows="5"></textarea>
+                        </div>
+                        <div>
+                            <button id="submitbutton" class="btn btn-success" type="button">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="City">City</label>
-                    <input class="form-control" id="city"
-                        placeholder="New York">
-                </div>
-                <div class="form-group" >
-                    <label for="description">Description</label>
-                    <textarea class="form-control" id="text" rows="5"></textarea>
-                </div>
-                <div>
-                    <button id="submitbutton" class="btn btn-success" type="button">Submit</button>
-                </div>
-            </form>
+            </div>
         </div>
         <div id="card-container">
         </div>

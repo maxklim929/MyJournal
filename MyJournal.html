@@ -40,24 +40,28 @@
     </div>
   </nav>
 
-  <div style="margin-left: 1rem;">
-    <h2 class="text-center" style="width: 98vw; background-color:rgb(245, 245, 245); margin-top: 1rem">New Entry...</h2>
+  <div id="newentry">
+  <div class="card" style="width: 90%; background-color: rgb(202, 157, 111);" id="newentry">
+    <div class="card-body">
+      <h2 class="text-center" style="background-color:rgb(245, 245, 245); margin-top: 1rem">New Entry...
+      </h2>
 
-    <div id="travel-forms">
       <form>
         <div class="form-group">
           <label for="description">Description</label>
-          <textarea class="form-control" style="width: 98vw; height: 10vw;" id="text" rows="5" placeholder="Tell me about your day..."></textarea>
+          <textarea class="form-control" id="text" rows="5"
+            placeholder="Tell me about your day..."></textarea>
         </div>
       </form>
+      <button type="button" class="btn btn-success btn-md" id="happy">Happy</button>
+      <button type="button" class="btn btn-primary btn-md" id="sad">Sad</button>
+      <button type="button" class="btn btn-danger btn-md" id="mad">Mad</button>
+      <button type="button" class="btn btn-warning btn-md" id="thankful">Thankful</button>
+      <button type="button" class="btn btn-dark btn-md" id="nervous">Nervous</button> <br> <br>
+      <button type="button" class="btn btn-secondary btn-lg" id="subButton">Log Journal</button>
     </div>
-    <button type="button" class="btn btn-success btn-md" id="happy">Happy</button>
-    <button type="button" class="btn btn-primary btn-md" id="sad">Sad</button>
-    <button type="button" class="btn btn-danger btn-md" id="mad">Mad</button>
-    <button type="button" class="btn btn-warning btn-md" id="thankful">Thankful</button>
-    <button type="button" class="btn btn-dark btn-md" id="nervous">Nervous</button> <br> <br>
-    <button type="button" class="btn btn-secondary btn-lg" id="subButton">Log Journal</button>
   </div>
+</div>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
