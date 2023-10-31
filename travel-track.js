@@ -6,7 +6,9 @@ function saveTravel(rest, city, desc) {
     } else {
       data.push(info);
     }
+    console.log("Saved")
     localStorage.setItem('travelLog', JSON.stringify(data)); // update localStorage
+    console.log(data);
 }
 let entries = localStorage.getItem('travelLog');
 var data = [];
@@ -28,5 +30,6 @@ document.getElementById('submitbutton').addEventListener("click", () => {
         <a href="#" class="card-link">Another link</a>
     </div>
     </div>`;
+    console.log("Clicked");
     saveTravel(restname, city, desc);
 });
