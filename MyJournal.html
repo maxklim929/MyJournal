@@ -17,11 +17,11 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="https://maxklim929.github.io/MyJournal/index.html"
         style="color:white"><strong>MyJournal</strong></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
-        aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="https://maxklim929.github.io/MyJournal/MyJournal.html"
@@ -33,50 +33,31 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://maxklim929.github.io/MyJournal/travel-track.html"
-                style="color:white">TravelLog</a>
+              style="color:white">TravelLog</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <div style="margin-left: 1rem;">
+    <h2 class="text-center" style="width: 98vw; background-color:rgb(245, 245, 245); margin-top: 1rem">New Entry...</h2>
 
-  <section class="card, mx-auto" style="width:80%">
-    <h2 class="card-header text-center" style="background-color:rgb(245, 245, 245)">Journal Entry</h2>
-
-    <div class="card-body">
-      <form action="index.html">
-        <textarea rows="10" cols="100" name="description" id="txtBox"
-          placeholder="Tell me about your day..."></textarea><br>
-      </form>
-      <button type="button" class="btn btn-success btn-md" id="happy">Happy</button>
-      <button type="button" class="btn btn-primary btn-md" id="sad">Sad</button>
-      <button type="button" class="btn btn-danger btn-md" id="mad">Mad</button>
-      <button type="button" class="btn btn-warning btn-md" id="thankful">Thankful</button>
-      <button type="button" class="btn btn-dark btn-md" id="nervous">Nervous</button> <br> <br>
-      <button type="button" class="btn btn-secondary btn-lg" id="subButton">Log Journal</button>
-    </div>
-
-
-
-    <div style="text-align: center">
-      <div class="modal fade" tabindex="-1" id="savedQuotesModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Saved Quotes</h5>
-              <button type="button" class="close" data-dismiss="modal">
-                <span>&times;</span>
-              </button>
-            </div>
-            <div class="modal-body mx-auto" id="modalText">
-
-            </div>
-          </div>
+    <div id="travel-forms">
+      <form>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea class="form-control" style="width: 98vw; height: 10vw;" id="text" rows="5" placeholder="Tell me about your day..."></textarea>
         </div>
-      </div>
+      </form>
     </div>
-  </section>
+    <button type="button" class="btn btn-success btn-md" id="happy">Happy</button>
+    <button type="button" class="btn btn-primary btn-md" id="sad">Sad</button>
+    <button type="button" class="btn btn-danger btn-md" id="mad">Mad</button>
+    <button type="button" class="btn btn-warning btn-md" id="thankful">Thankful</button>
+    <button type="button" class="btn btn-dark btn-md" id="nervous">Nervous</button> <br> <br>
+    <button type="button" class="btn btn-secondary btn-lg" id="subButton">Log Journal</button>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
