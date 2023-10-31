@@ -1,3 +1,18 @@
+function saveTrave(rest, city, desc) {
+    let info = [];
+    info.push(rest, city, desc);
+    if (data == null) {
+      data = [info];
+    } else {
+      data.push(info);
+    }
+    localStorage.setItem('travelLog', JSON.stringify(data)); // update localStorage
+}
+let entries = localStorage.getItem('travelLog');
+var data = [];
+if (entries != '') {
+  data = JSON.parse(entries);
+}
 document.getElementById('submitbutton').addEventListener("click", () => {
     let restname = document.getElementById('restaurant-name').value;
     let city = document.getElementById('city').value;
