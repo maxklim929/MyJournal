@@ -1,4 +1,4 @@
-function saveTrave(rest, city, desc) {
+function saveTravel(rest, city, desc) {
     let info = [];
     info.push(rest, city, desc);
     if (data == null) {
@@ -28,4 +28,5 @@ document.getElementById('submitbutton').addEventListener("click", () => {
         <a href="#" class="card-link">Another link</a>
     </div>
     </div>`;
+    saveTravel(restname, city, desc);
 });
