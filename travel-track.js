@@ -20,7 +20,7 @@ document.getElementById('submitbutton').addEventListener("click", () => {
     let city = document.getElementById('city').value;
     let desc = document.getElementById('text').value;
     document.getElementById("card-container").innerHTML +=
-        `<div class="card" style="width: 40rem; margin-top: 1rem;">
+        `<div class="card" style="width: 50%; margin-top: 1rem;">
     <img src="${cat}.jpeg" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">${restname}</h5>
@@ -37,7 +37,7 @@ var data = JSON.parse(entries);
 if (entries != '') {
     for (let entry of data) {
         document.getElementById("card-container").innerHTML +=
-        `<div class="card" style="width: 40rem; margin-top: 1rem;">
+        `<div class="card" style="width: 50%; margin-top: 1rem;">
     <img src="${entry[1]}.jpeg" class="card-img-top" alt="...">
     <div class="card-body">
     <h5 class="card-title">${entry[0]}</h5>
