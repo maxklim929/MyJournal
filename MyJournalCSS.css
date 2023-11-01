@@ -23,3 +23,10 @@
     justify-content: center;
     align-content: center;
 }
+
+#lists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
