@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Max Klimenko">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="MyJournalCSS.css">
-    <meta name="author" content="Max Klimenko">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="MyJournalCSS.css">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/mylist.css">
     <title>MyList</title>
 </head>
 
@@ -28,43 +28,50 @@
             <div class="navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://maxklim929.github.io/MyJournal/MyJournal.html"
+                        <a class="nav-link" href="https://maxklim929.github.io/MyJournal/newentry.html"
                             style="color:white">NewEntry</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://maxklim929.github.io/MyJournal/MyEntries.html"
+                        <a class="nav-link" href="https://maxklim929.github.io/MyJournal/myentries.html"
                             style="color:white">MyEntries</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://maxklim929.github.io/MyJournal/travel-track.html"
+                        <a class="nav-link" href="https://maxklim929.github.io/MyJournal/travellog.html"
                             style="color:white">TravelLog</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://maxklim929.github.io/MyJournal/mylist.html"
+                    <!-- <li class="nav-item"> Future plans to implement 11/01/23
+                        <a class="nav-link" href="https://maxklim929.github.io/MyJournalDev/Project/mylist.html"
                             style="color:white">MyLists</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
     </nav>
     <div id="lists">
-        <div class="card" style="width: 90%; background-color: rgb(202, 157, 111);" id="newentry">
+        <div class="card">
             <div class="card-body">
-                <h5 class="card-title">List of Daily Workouts API</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's content.</p>
+                <h1 class="card-title">List of Daily Workouts API</h1>
+                <p class="card-text">API that shows list of workouts</p>
             </div>
         </div>
-        <div class="card" style="width: 90%; background-color: rgb(202, 157, 111);" id="newentry">
+        <div class="card">
             <div class="card-body">
-                <h5 class="card-title">List of Daily Affirmations API</h5>
+                <h1 class="card-title">List of Daily Affirmations API</h1>
                 <p class="card-text">API that shows list of affirmations</p>
             </div>
         </div>
-        <div class="card" style="width: 90%; background-color: rgb(202, 157, 111);" id="newentry">
+        <div class="card">
             <div class="card-body">
-                <h5 class="card-title">List of Cooking Recipe API</h5>
+                <h1 class="card-title">List of Cooking Recipe API</h1>
                 <p class="card-text">API that shows a daily cooking recipe</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Help!</h1>
+                <p class="card-text">Don't know what to write about? <a
+                        href="https://dayoneapp.com/blog/journal-prompts/" target="_blank">Here's</a> a link to some
+                    prompts!</p>
             </div>
         </div>
     </div>
@@ -77,8 +84,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <!-- <script src=NewEntry.js></script> -->
+    <script src="./script/mylist.js"></script>
 </body>
 
 </html>

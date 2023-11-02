@@ -1,0 +1,48 @@
+* {
+    font-family: serif;
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+#titlehead {
+    text-align: center;
+    background-color: white;
+}
+
+#travel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#newentry {
+    height: 50%;
+    margin-right: 1rem;
+}
+
+.card {
+    width: 100%;
+}
+
+#submitbutton {
+    background-color: green;
+    color: white;
+}
+
+@media (max-width: 256px) {
+    #travel-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    #newentry {
+        height: 50%;
+        margin-bottom: 1rem;
+    }
+}

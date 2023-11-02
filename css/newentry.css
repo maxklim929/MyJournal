@@ -1,0 +1,26 @@
+* {
+    font-family: serif;
+}
+
+h1 {
+    background-color: white;
+    margin-top: 1rem;
+    font-family: sans-serif;
+}
+
+#newentry {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: center;
+    align-content: center;
+}
+
+#happy {
+    color: white;
+    background-color: green;
+}
+
+#sad {
+    color: white;
+    background-color: blue;
+}
