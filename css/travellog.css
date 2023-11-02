@@ -31,7 +31,7 @@ h1 {
     color: white;
 }
 
-@media (max-width: 256px) {
+@media (max-width: 500px) {
     #travel-container {
         display: flex;
         flex-direction: column;
