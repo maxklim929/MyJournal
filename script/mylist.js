@@ -3,14 +3,12 @@ fetch(`https://uselessfacts.jsph.pl/api/v2/facts/today`).then(response => respon
     document.getElementById("save_fact").addEventListener('click', () => {
         if (localStorage.getItem('Facts') == null) {
             var new_data = [document.getElementById("define").innerText];
-            console.log(new_data);
             localStorage.setItem('Facts', JSON.stringify(new_data));
         } else {
             var curr_hist = JSON.parse(localStorage.getItem('Facts'));
             curr_hist.push(document.getElementById("define").innerText)
             localStorage.setItem('Facts', JSON.stringify(curr_hist));
             curr_hist = JSON.parse(localStorage.getItem('Facts'));
-            console.log(curr_hist);
         }
     });
 });
@@ -19,14 +17,12 @@ fetch(`https://www.boredapi.com/api/activity/`).then(response => response.json()
     document.getElementById("save_bored").addEventListener('click', () => {
         if (localStorage.getItem('Bored') == null) {
             var new_data = [document.getElementById("bored").innerText];
-            console.log(new_data);
             localStorage.setItem('Bored', JSON.stringify(new_data));
         } else {
             var curr_hist = JSON.parse(localStorage.getItem('Bored'));
             curr_hist.push(document.getElementById("bored").innerText)
             localStorage.setItem('Bored', JSON.stringify(curr_hist));
             curr_hist = JSON.parse(localStorage.getItem('Bored'));
-            console.log(curr_hist);
         }
     });
 });
@@ -35,14 +31,12 @@ fetch(`https://api.quotable.io/random`).then(response => response.json()).then(d
     document.getElementById("save_quote").addEventListener('click', () => {
         if (localStorage.getItem('Quote') == null) {
             var new_data = [document.getElementById("ins_quote").innerHTML];
-            console.log(new_data);
             localStorage.setItem('Quote', JSON.stringify(new_data));
         } else {
             var curr_hist = JSON.parse(localStorage.getItem('Quote'));
             curr_hist.push(document.getElementById("ins_quote").innerHTML)
             localStorage.setItem('Quote', JSON.stringify(curr_hist));
             curr_hist = JSON.parse(localStorage.getItem('Quote'));
-            console.log(curr_hist);
         }
     });
 });
@@ -86,7 +80,6 @@ fetch(`https://api.nytimes.com/svc/topstories/v2/world.json?api-key=H92OvzsBcMz4
             curr_hist.push(data["results"][c1_ind])
             localStorage.setItem('News', JSON.stringify(curr_hist));
             curr_hist = JSON.parse(localStorage.getItem('News'));
-            console.log(curr_hist);
         }
     });
 });
