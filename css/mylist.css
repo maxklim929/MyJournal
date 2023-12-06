@@ -44,10 +44,14 @@ a {
 
 /* Small Screens */
 @media (min-width: 450px) {
-    #news1, #news2 {
+
+    #news1,
+    #news2 {
         font-size: 20px
     }
-    #c1_title, #c2_title {
+
+    #c1_title,
+    #c2_title {
         font-size: 30px
     }
 }
