@@ -36,7 +36,7 @@ newsbtn.addEventListener('click', () => {
                 <img class="card-img-top" alt="Card image cap" src=${entry["multimedia"][0]["url"]}>
                 <div class="card-body">
                     <div class="card-title"><strong>${entry["title"]}</strong></div>
-                    <div class="card-text" id="news1"><i>${entry["byline"]}</i> - ${entry["created_date"].substring(0, 10)}
+                    <div class="card-text"><i>${entry["byline"]}</i> - ${entry["created_date"].substring(0, 10)}
                     <br> ${entry["abstract"]}
                     <br> <a href="${entry["url"]}">Link to Article</a></div>
                 </div>
