@@ -33,6 +33,11 @@ a {
     padding: 15px;
 }
 
+#c1_card,
+#c2_card {
+    width: 100%;
+}
+
 #save_fact,
 #save_bored,
 #save_quote,
@@ -53,5 +58,10 @@ a {
     #c1_title,
     #c2_title {
         font-size: 30px
+    }
+
+    #c1_card,
+    #c2_card {
+        width: 50%;
     }
 }
