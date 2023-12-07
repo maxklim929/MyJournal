@@ -15,7 +15,7 @@ h1 {
 
 .card {
     margin-top: 1rem;
-    width: 100%;
+    width: 90%;
     background-color: rgb(202, 157, 111);
 }
 
@@ -35,7 +35,7 @@ a {
 
 #c1_card,
 #c2_card {
-    width: 50%;
+    width: 100%;
 }
 
 #save_fact,
@@ -62,6 +62,6 @@ a {
 
     #c1_card,
     #c2_card {
-        width: 1%;
+        width: 50%;
     }
 }
